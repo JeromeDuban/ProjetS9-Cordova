@@ -2,6 +2,7 @@
 (function () {
 
   var scanTimer = null;
+  var betweenScanTimer = null;
 
   document.addEventListener('deviceready', function () {
     console.log("OK good to go");
@@ -15,8 +16,7 @@
     document.addEventListener('toggle', function (e) {
       if ($(".toggle").hasClass("active")) {
         console.log("Starting scan for beacons.");
-        var paramsObj = {"serviceUuids":[]};
-        bluetoothle.startScan(startScanSuccess, startScanError, paramsObj);
+        startScan();
       } else {
         bluetoothle.stopScan(stopScanSuccess, stopScanError);
         clearScanTimeout();
@@ -25,7 +25,13 @@
     });
   }, false);
 
+  function startScan() {
+    var paramsObj = {"serviceUuids":[]};
+    bluetoothle.startScan(startScanSuccess, startScanError, paramsObj);
+    console.log("15s ellapsed, start another scan.");
+    betweenScanTimer = setTimeout(startScan, 15000);
 
+  }
   function initializeSuccess(obj)
   {
     if (obj.status == "enabled")
@@ -56,8 +62,8 @@
     }
     else if (obj.status == "scanStarted")
     {
-      console.log("Scan was started successfully, stopping in 10");
-      scanTimer = setTimeout(scanTimeout, 10000);
+      console.log("Scan was started successfully, stopping in 2");
+      scanTimer = setTimeout(scanTimeout, 2000);
     }
     else
     {
