@@ -84,10 +84,12 @@
 
   function clearScanTimeout()
   { 
-      console.log("Clearing scanning timeout");
-    if (scanTimer != null)
-    {
+    console.log("Clearing scanning timeout");
+    if (scanTimer != null) {
       clearTimeout(scanTimer);
+    }
+    if (betweenScanTimer != null) {
+      clearTimeout(betweenScanTimer);
     }
   }
 
