@@ -41,6 +41,8 @@
 		A5CFFB0F77184DB0BE871E4C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A161F390A2C94B36830FD621 /* CoreBluetooth.framework */; };
 		46766B36F4CE4752985A247D /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 365132D9835C46D1A3F8F891 /* CDVLogger.m */; };
 		DCDABF7EF71E45A98A25A9D2 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B2647180D74A30A2021E93 /* CDVStatusBar.m */; };
+		7A48238A50284A829DF493E5 /* APPBackgroundMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310F45EB6A449019E443C49 /* APPBackgroundMode.m */; };
+		8D687CC6FF5B4FC683FF2A90 /* silent.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8315A9CE496344AFA0672246 /* silent.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,9 @@
 		FBF833BA99274CDB9E639EC2 /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		63B2647180D74A30A2021E93 /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		0AFA409F462E46EE82AC7DDB /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4310F45EB6A449019E443C49 /* APPBackgroundMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "APPBackgroundMode.m"; path = "de.appplant.cordova.plugin.background-mode/APPBackgroundMode.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		0D15428D1E3143E29923474A /* APPBackgroundMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "APPBackgroundMode.h"; path = "de.appplant.cordova.plugin.background-mode/APPBackgroundMode.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		8315A9CE496344AFA0672246 /* silent.wav */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "silent.wav"; path = "silent.wav"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +209,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* ProjetS9-Info.plist */,
+				8315A9CE496344AFA0672246 /* silent.wav */,
 			);
 			name = Resources;
 			path = "ProjetS9/Resources";
@@ -237,6 +243,8 @@
 				FBF833BA99274CDB9E639EC2 /* CDVLogger.h */,
 				63B2647180D74A30A2021E93 /* CDVStatusBar.m */,
 				0AFA409F462E46EE82AC7DDB /* CDVStatusBar.h */,
+				4310F45EB6A449019E443C49 /* APPBackgroundMode.m */,
+				0D15428D1E3143E29923474A /* APPBackgroundMode.h */,
 			);
 			name = Plugins;
 			path = "ProjetS9/Plugins";
@@ -400,6 +408,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				8D687CC6FF5B4FC683FF2A90 /* silent.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +443,7 @@
 				BFE08BF14F7648B8BF00FAF0 /* BluetoothLePlugin.m in Sources */,
 				46766B36F4CE4752985A247D /* CDVLogger.m in Sources */,
 				DCDABF7EF71E45A98A25A9D2 /* CDVStatusBar.m in Sources */,
+				7A48238A50284A829DF493E5 /* APPBackgroundMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

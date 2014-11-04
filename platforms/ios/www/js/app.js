@@ -62,7 +62,7 @@
     }
     else if (obj.status == "scanStarted")
     {
-      console.log("Scan was started successfully, stopping in 10");
+      console.log("Scan was started successfully, stopping in 2");
       scanTimer = setTimeout(scanTimeout, 2000);
     }
     else

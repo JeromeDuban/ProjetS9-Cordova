@@ -13,6 +13,13 @@ module.exports = [
         "clobbers": [
             "window.bluetoothle"
         ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
+        "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
+        "clobbers": [
+            "plugin.backgroundMode"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -20,7 +27,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.console": "0.2.11",
     "org.apache.cordova.statusbar": "0.1.8",
-    "com.randdusing.bluetoothle": "1.0.6"
+    "com.randdusing.bluetoothle": "1.0.6",
+    "de.appplant.cordova.plugin.background-mode": "0.6.0-dev"
 }
 // BOTTOM OF METADATA
 });

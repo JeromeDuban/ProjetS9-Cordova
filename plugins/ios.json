@@ -37,6 +37,10 @@
                         {
                             "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BackgroundMode\"><param name=\"ios-package\" onload=\"true\" value=\"APPBackgroundMode\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -46,6 +50,10 @@
                     "UIBackgroundModes": [
                         {
                             "xml": "<array><string>bluetooth-central</string></array>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<array><string>audio</string></array>",
                             "count": 1
                         }
                     ]
@@ -61,6 +69,9 @@
             "PACKAGE_NAME": "com.eirb.projets9"
         },
         "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.eirb.projets9"
+        },
+        "de.appplant.cordova.plugin.background-mode": {
             "PACKAGE_NAME": "com.eirb.projets9"
         }
     },
